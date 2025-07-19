@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num, m;
+    cin >> num >> m;
+
+    int p = 1, counter = 0;
+
+    while (counter < m) {
+        p *= num;
+        counter++;
+    }
+
+    cout << p;
+    return 0;
+}

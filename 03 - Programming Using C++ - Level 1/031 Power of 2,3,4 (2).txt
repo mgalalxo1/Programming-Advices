@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+void PrintPowers(int num) {
+    cout << num * num << endl;           // num^2
+    cout << num * num * num << endl;     // num^3
+    cout << num * num * num * num << endl; // num^4
+}
+
+int main() {
+    int number;
+    cin >> number;
+    PrintPowers(number);
+    return 0;
+}

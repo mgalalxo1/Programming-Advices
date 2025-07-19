@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+void ConvertSeconds(int totalSeconds) {
+    int secondsPerDay = 24 * 60 * 60;
+    int secondsPerHour = 60 * 60;
+    int secondsPerMinute = 60;
+
+    int days = totalSeconds / secondsPerDay;
+    totalSeconds %= secondsPerDay;
+
+    int hours = totalSeconds / secondsPerHour;
+    totalSeconds %= secondsPerHour;
+
+    int minutes = totalSeconds / secondsPerMinute;
+    int seconds = totalSeconds % secondsPerMinute;
+
+    cout << days << ":" << hours << ":" << minutes << ":" << seconds;
+}
+
+int main() {
+    int totalSeconds;
+    cin >> totalSeconds;
+    ConvertSeconds(totalSeconds);
+    return 0;
+}

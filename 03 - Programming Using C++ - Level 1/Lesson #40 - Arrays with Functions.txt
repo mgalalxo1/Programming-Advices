@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+float calculateAverage(int grades[], int size) {
+    int sum = 0;
+    for (int i = 0; i < size; i++) {
+        sum += grades[i];
+    }
+    return (float)sum / size;
+}
+
+int main() {
+    const int SIZE = 3;
+    int grades[SIZE];
+
+    for (int i = 0; i < SIZE; i++) {
+        cout << "Please Enter Grade" << i + 1 << "? ";
+        cin >> grades[i];
+    }
+
+    float average = calculateAverage(grades, SIZE);
+
+    cout << "----------------------------\n";
+    cout << "The average of grades is " << average << endl;
+
+    return 0;
+}

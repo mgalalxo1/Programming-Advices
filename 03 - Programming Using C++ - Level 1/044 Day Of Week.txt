@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int day;
+    cin >> day;
+
+    while (day < 1 || day > 7) {
+        cout << "Wrong Day" << endl;
+        cin >> day;
+    }
+
+    if (day == 1)
+        cout << "It’s Sunday";
+    else if (day == 2)
+        cout << "It’s Monday";
+    else if (day == 3)
+        cout << "It’s Tuesday";
+    else if (day == 4)
+        cout << "It’s Wednesday";
+    else if (day == 5)
+        cout << "It’s Thursday";
+    else if (day == 6)
+        cout << "It’s Friday";
+    else if (day == 7)
+        cout << "It’s Saturday";
+
+    return 0;
+}

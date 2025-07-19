@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double A;
+    cin >> A;
+    double area = (3.14 * A * A) / 4;
+    cout << area;
+    return 0;
+}

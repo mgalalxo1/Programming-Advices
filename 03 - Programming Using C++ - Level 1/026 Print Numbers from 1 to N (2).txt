@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, counter = 1;
+    cin >> n;
+
+    while (counter <= n) {
+        cout << counter << endl;
+        counter++;
+    }
+
+    return 0;
+}

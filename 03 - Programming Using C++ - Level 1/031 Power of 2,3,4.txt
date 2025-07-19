@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num;
+
+    cout << "Enter a number: ";
+    cin >> num;
+
+    int power2 = num * num;
+    int power3 = num * num * num;
+    int power4 = num * num * num * num;
+
+    cout << "Number squared (power of 2): " << power2 << endl;
+    cout << "Number cubed (power of 3): " << power3 << endl;
+    cout << "Number to the power of 4: " << power4 << endl;
+
+    return 0;
+}
