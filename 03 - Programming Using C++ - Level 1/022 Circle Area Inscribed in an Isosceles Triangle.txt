@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    float a, b;
+    const float PI = 3.14;
+
+    cout << "Enter the equal side (a): ";
+    cin >> a;
+
+    cout << "Enter the base (b): ";
+    cin >> b;
+
+    float area = (PI * b * b / 4) * ((2 * a - b) / (2 * a + b));
+
+    cout << "The area of the inscribed circle is: " << area << endl;
+
+    return 0;
+}

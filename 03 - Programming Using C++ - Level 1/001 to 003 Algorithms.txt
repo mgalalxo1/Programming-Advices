@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+void PrintName() {
+    cout << "Mohammed";
+}
+
+int main() {
+    PrintName();
+    return 0;
+}
+
+
+#include <iostream>
+using namespace std;
+
+void PrintName(string name) {
+    cout << name;
+}
+
+int main() {
+    string userName;
+    cin >> userName;
+    PrintName(userName);
+    return 0;
+}

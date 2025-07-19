@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int globalVar = 100;
+
+void showGlobal() {
+    cout << "Inside showGlobal(): globalVar = " << globalVar << endl;
+}
+
+void localExample() {
+    int globalVar = 50; 
+    cout << "Inside localExample(): local globalVar = " << globalVar << endl;
+}
+
+int main() {
+    cout << "Inside main(): globalVar = " << globalVar << endl;
+
+    showGlobal();       
+    localExample();     
+    cout << "Back to main(): globalVar = " << globalVar << endl;
+
+    return 0;
+}

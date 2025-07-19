@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    float billValue;
+
+    cout << "Enter the bill value: ";
+    cin >> billValue;
+
+    float withService = billValue * 1.10;
+
+    float totalBill = withService * 1.16;
+
+    cout << "The total bill after service fee and sales tax is: " << totalBill << endl;
+
+    return 0;
+}

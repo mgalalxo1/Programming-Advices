@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+void PrintCircleAreaByDiameter(double d) {
+    double area = (3.14 * d * d) / 4;
+    cout << area;
+}
+
+int main() {
+    double diameter;
+    cin >> diameter;
+    PrintCircleAreaByDiameter(diameter);
+    return 0;
+}

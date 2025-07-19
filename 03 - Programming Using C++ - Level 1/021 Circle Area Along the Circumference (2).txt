@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+void PrintCircleAreaFromCircumference(double L) {
+    double area = (L * L) / (4 * 3.14);
+    cout << area;
+}
+
+int main() {
+    double L;
+    cin >> L;
+    PrintCircleAreaFromCircumference(L);
+    return 0;
+}

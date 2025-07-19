@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int totalSeconds;
+    
+    // قراءة عدد الثواني من المستخدم
+    cout << "Enter total seconds: ";
+    cin >> totalSeconds;
+
+    int secondsPerDay = 24 * 60 * 60;
+    int secondsPerHour = 60 * 60;
+    int secondsPerMinute = 60;
+
+    int days = totalSeconds / secondsPerDay;
+    int remainder = totalSeconds % secondsPerDay;
+
+    int hours = remainder / secondsPerHour;
+    remainder = remainder % secondsPerHour;
+
+    int minutes = remainder / secondsPerMinute;
+
+    int seconds = remainder % secondsPerMinute;
+
+    cout << days << ":" << hours << ":" << minutes << ":" << seconds << endl;
+
+    return 0;
+}

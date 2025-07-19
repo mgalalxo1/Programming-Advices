@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+void PrintCircleArea(double r) {
+    double area = 3.14 * r * r;
+    cout << area;
+}
+
+int main() {
+    double r;
+    cin >> r;
+    PrintCircleArea(r);
+    return 0;
+}

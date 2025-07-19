@@ -1,0 +1,77 @@
+#include <iostream>
+using namespace std;
+
+// AA to ZZ
+void pattern1() {
+    for (char c1 = 'A'; c1 <= 'Z'; c1++) {
+        for (char c2 = 'A'; c2 <= 'Z'; c2++) {
+            cout << c1 << c2 << endl;
+        }
+    }
+}
+
+// Inverted star triangle
+void pattern2() {
+    for (int i = 10; i >= 1; i--) {
+        for (int j = 1; j <= i; j++) {
+            cout << "*";
+        }
+        cout << endl;
+    }
+}
+
+// Inverted numbers from 1 to 10
+void pattern3() {
+    for (int i = 10; i >= 1; i--) {
+        for (int j = 1; j <= i; j++) {
+            cout << j;
+        }
+        cout << endl;
+    }
+}
+
+// Normal number triangle
+void pattern4() {
+    for (int i = 1; i <= 9; i++) {
+        for (int j = 1; j <= i; j++) {
+            cout << j;
+        }
+        cout << endl;
+    }
+}
+
+// A to ABCDEF
+void pattern5() {
+    for (char i = 'A'; i <= 'F'; i++) {
+        for (char j = 'A'; j <= i; j++) {
+            cout << j;
+        }
+        cout << endl;
+    }
+}
+
+int main() {
+    int choice;
+
+    cout << "Choose a pattern to print:\n";
+    cout << "1. AA to ZZ\n";
+    cout << "2. Inverted Star Triangle\n";
+    cout << "3. Inverted Number Triangle (1-10)\n";
+    cout << "4. Normal Number Triangle (1-9)\n";
+    cout << "5. A to ABCDEF\n";
+    cout << "Enter your choice (1-5): ";
+    cin >> choice;
+
+    cout << "------------------------" << endl;
+
+    switch (choice) {
+        case 1: pattern1(); break;
+        case 2: pattern2(); break;
+        case 3: pattern3(); break;
+        case 4: pattern4(); break;
+        case 5: pattern5(); break;
+        default: cout << "Invalid choice!\n"; break;
+    }
+
+    return 0;
+}

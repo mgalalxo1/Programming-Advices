@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+
+    while (n <= 0) {
+        cout << "Factorial Must be Positive Number" << endl;
+        cin >> n;
+    }
+
+    int factorial = 1;
+    while (n >= 1) {
+        factorial *= n;
+        n--;
+    }
+
+    cout << factorial;
+    return 0;
+}
